@@ -3,11 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import ElementUI from 'element-ui';
+import MyServerHttp from '@/plugins/http.js'
 import 'element-ui/lib/theme-chalk/index.css';
+import '@/assets/css/reset.css'
 import router from './router'
 
 // 使用elementUI
 Vue.use(ElementUI);
+Vue.use(MyServerHttp);
 
 // 错误调试信息是否需要输出
 Vue.config.productionTip = false
